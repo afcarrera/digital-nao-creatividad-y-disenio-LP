@@ -1,0 +1,72 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	background: linear-gradient(90deg, #16A085 0%, #F4D03F 100%);
+	min-height: 100vh;
+}
+
+.container{
+	position: relative;
+	height: 600px;
+	display: flex;
+	align-items: center;
+}
+
+.wave{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60%;
+}
+
+.text-container{
+	flex-basis: 50%;
+	padding-left: 40px;
+	overflow: hidden;
+	color: #FFFFFF;
+}
+
+.title{
+	font-size: 50px;
+}
+
+.subtitle{
+	font-size: 30px;
+	margin: 20px 0;
+}
+
+.cta{
+	display: inline-block;
+	width: 150px;
+	padding: 15px 0;
+	text-align: center;
+	background: #FFFFFF;
+	border-radius: 4px;
+
+}
+
+.image-container{
+	flex-basis: 50%;
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	overflow: hidden;
+}
+
+.img{
+	width: 90%;
+	animation: ilustrationAnimate ease-in 1s infinite alternate;
+}
+
+@keyframes ilustrationAnimate {
+	0%{
+		transform: scale(1);
+	}100%{
+		transform: scale(1.04);
+	}
+}
