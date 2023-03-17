@@ -10,11 +10,16 @@ body{
 	min-height: 100vh;
 }
 
-.container{
+.internal-container{
 	position: relative;
-	height: 600px;
+	height: 100vh;
 	display: flex;
 	align-items: center;
+}
+
+.large-internal-container{
+	position: relative;
+	height: 400%;
 }
 
 .wave{
@@ -26,7 +31,7 @@ body{
 
 .text-container{
 	flex-basis: 50%;
-	padding-left: 40px;
+	padding-left: 3.33%;
 	overflow: hidden;
 	color: #FFFFFF;
 }
@@ -40,6 +45,13 @@ body{
 	margin: 20px 0;
 }
 
+.menu-item{
+	font-style: normal;
+	font-weight: 400;
+	line-height: 29px;
+	color: #FFFFFF;
+}
+
 .cta{
 	display: inline-block;
 	width: 150px;
@@ -47,7 +59,17 @@ body{
 	text-align: center;
 	background: #FFFFFF;
 	border-radius: 4px;
+	text-decoration: none;
+}
 
+.btn-txt{
+	color: #16A085;
+}
+
+.social-media-presentation{
+	color: #16A085;
+	text-align: center;
+	
 }
 
 .image-container{
@@ -63,6 +85,253 @@ body{
 	animation: ilustrationAnimate ease-in 1s infinite alternate;
 }
 
+.img-logo{
+	width: 90%;
+}
+
+.img-toggle{
+	width: 7%;
+	position: absolute;
+	top: 0;
+	right: 5vw;
+}
+
+.cajaNav{
+	font-family: sans-serif;
+	display:flex;
+	justify-content: space-between;
+	color: var(--color);
+	grid-template-columns: 1fr auto;
+	align-items: center;
+	position:sticky;
+	top:0;
+	width:100%;
+	z-index: 2;
+	margin-top: 10%;
+	background: linear-gradient(90deg, #348F50 0%, #56B4D3 100%);
+}
+
+.cajaNav .barNav{
+	margin:0 10px 0 0;
+	display:flex;
+	list-style:none;
+	align-items: center;
+	padding:0;
+	grid-template-columns: repeat(4,auto);
+	margin-right: 30px;
+}
+
+.cajaNav .titNav{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	flex: 1;
+	background:var(--fnd);
+	color:var(--color);
+	height:auto;
+}
+
+.cajaNav .titNav .toggle{
+	display:none;
+}
+
+.cajaNav .titNav .logo{
+	margin: 10px 10px; 
+}
+
+.cajaNav .barNav li{
+	display:flex;
+	align-items:center;
+	padding: 0 20px ;
+	height:100%;
+}
+.cajaNav .barNav li:hover{
+	background: var(--color);
+	color:var(--fnd);
+	cursor: pointer;
+}
+.cajaNav .barNav li a{
+	text-decoration: none;
+	cursor: pointer;
+	color:inherit;
+}
+
+.cajaNav .barNav div{
+	padding: 10px 20px;
+}
+.cajaNav .barNav div:hover{
+	cursor: pointer;
+	background:#CDDC39;
+}
+
+.course-container{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 4.17%;
+
+	position: absolute;
+	width: 95%;
+	height: 66.67%;
+	left: 1.91vw;
+}
+
+.course-card{
+	border: 1px solid #004000;
+	width: 29.16%;
+	height: 66.67vh;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.course-card .course-card-internal{
+	width: 20vw;
+	height: 53vh;
+	top: 8.5vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+	gap: 5.33vh;
+	text-align: center;
+	position:absolute;
+}
+
+.course-card .image-card{
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+
+.presentation-container{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px;
+
+	position: absolute;
+	width: 88.5%;
+	height: 66.67%;
+	left: 6.58%;
+	top: 20%;
+}
+
+.presentation-social-media{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px;
+	flex: none;
+	order: 2;
+	flex-grow: 0;
+	font-size: 30px;
+}
+.presentation-social-media .img-logo{
+	width: 5%;
+}
+
+.form-input{
+	background: #004000;
+	border: 1px solid #FFFFFF;
+	color: #FFFFFF;
+}
+
+.form-label{
+	color: #FFFFFF;
+	font-weight: 400;
+	line-height: 29px;
+}
+
+.form-container{
+	border: 1px solid #004000;
+	padding: 3.6% 5.3%;
+}
+
+.contact-container{
+	background: linear-gradient(90deg, #1D976C 0%, #93F9B9 100%);
+	width: 100%;
+	height: 76.66%;
+	left: 0;
+	top: 23.33%;
+	display: flex;	
+	flex-direction: column;
+	align-items: center;	
+	position: absolute;
+}
+
+.contact-internal-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+	gap: 10.83vh;
+	position: absolute;
+
+	width: 53.75%;
+	height: 73.26vh;
+	
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+
+.contact-card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 13.04vh 4.16%;
+	gap: 12.17vh;
+
+	width: 73%;
+	height: 100%;
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+
+.contact-logo{
+	height: 12.17vh; 
+	width: auto;
+}
+
+.social-media-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+	gap: 4%;
+
+	width: 98%;
+	height: 9vh;
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+
+.social-media-img{
+	width: auto;
+	height: 9vh;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+
+.credits{
+	color: #FFFFFF;
+	position:absolute;
+	bottom: 5%;	
+}
+
 @keyframes ilustrationAnimate {
 	0%{
 		transform: scale(1);
@@ -71,9 +340,24 @@ body{
 	}
 }
 
+@media screen and (max-width: 1280px){
+
+	.presentation-social-media .img-logo{
+		width: 12%;
+	}
+
+}
+
 @media screen and (max-width: 768px) {
-	.container{
+
+	.internal-container{
 		flex-direction: column-reverse;
+	}
+	
+	.presentation-container{
+		flex-direction: column;
+		height: 86.67%;
+		justify-content: center;
 	}
 
 	.wave{
@@ -109,12 +393,82 @@ body{
 	.img{
 		height: 90%;
 	}
+	
+	.img-picture{
+		height: 100%;
+	}
+
+	.cajaNav{
+		flex-direction: column;
+		align-items:flex-end;
+	}
+
+	.cajaNav .barNav{
+		color:white;
+		flex-direction:column;
+		display:none;
+	}
+
+	.cajaNav .barNav li {
+		padding: 10px 20px;
+	}
+
+	.cajaNav .barNav li:hover{
+		background: var(--fnd);
+		color: var(--color);
+	}
+
+	.cajaNav .titNav{
+		width: 100%;
+		align-items:center;
+	}
+
+	.cajaNav .titNav .toggle{
+		display:block;
+		margin-right:10px;
+		cursor:pointer
+	}
+	
+	.opened{display:flex !important}
+	.closed{display:none !important}
+
+	.contact-logo{
+		height: 9.17vh; 
+	}
 }
 
-@media screen and (max-width: 320px) {
-	.container{
-		flex-direction: column-reverse;
+@media screen and (max-width: 640px){
+
+	.img-toggle{
+		width: 8%;
 	}
+
+	.contact-internal-container{
+		flex-direction: column;
+		gap: 0;
+		height: 23.26%;
+		top: 25%;	
+	}
+	
+	.contact-card{
+		gap: 0;	
+		height: 70%;
+	}
+
+}
+
+@media screen and (max-height: 600px) and (min-width: 1280px) {
+
+	.wave{
+		height: 80%;
+		width: auto;
+		top: 0;
+		right: 0;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
 
 	.wave{
 		height: 48%;
@@ -129,4 +483,13 @@ body{
 	.title{
 		font-size: 35px;
 	}
+
+	.img-toggle{
+		width: 10%;
+	}
+
+	.contact-logo{
+		height: 6.17vh; 
+	}
+
 }

@@ -1,4 +1,4 @@
-# digital-nao-reto-1-ciclo-1
+# digital-nao-creatividad-y-disenio-LP
 ***
 
 ## Información
@@ -14,7 +14,7 @@ Rrepositorio con código de maquetado HTML con imágenes SVG.
 ***
 Comandos recomendados para instalación en plataformas Windows. 
 ```
-> git clone https://github.com/afcarrera/digital-nao-reto-1-ciclo-1
-> cd digital-nao-reto-1-ciclo-1
+> git clone https://github.com/afcarrera/digital-nao-creatividad-y-disenio-LP
+> cd digital-nao-creatividad-y-disenio-LP
 > start index.html
 ```
