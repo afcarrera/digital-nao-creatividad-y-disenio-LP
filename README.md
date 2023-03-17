@@ -9,6 +9,8 @@ Rrepositorio con código de maquetado HTML con imágenes SVG.
 * [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
 * [SVG](https://developer.mozilla.org/es/docs/Web/SVG)
+* [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [Bootstrap](https://getbootstrap.com/) Versión 5.2.3
 
 ## Instalación & uso
 ***
