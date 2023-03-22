@@ -14,155 +14,195 @@
 
 	</head>
 	<body>
-		<div class="internal-container" id="home">
-			<div class="text-container">
-				<h1 class="title">Entra ahora es tu momento</h1>
-				<h2 class="subtitle">Aprende a manejar tus finanzas</h2>
-				<a href="#menu" class="cta"><span class="btn-txt">Entra ahora</span></a>
+		<div class="container-fluid full-page" id="home">
+			<div class="container h-100 d-flex align-items-center justify-content-center" id="homeInternal">
+				<div class="card mb-12" style="background: none; border: none">
+					<div class="row g-0">
+						<div class="col-md-8 col-sm-6">
+							<div class="card-body">
+								<h1 class="title">Entra ahora es tu momento</h1>
+								<h2 class="subtitle">Aprende a manejar tus finanzas</h2>
+								<a href="#courses" class="cta"><span class="btn-txt">Entra ahora</span></a>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<img src="illustrations/illustration.svg" class="img-fluid rounded-start img" alt="">
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="image-container">
-				<img src="illustrations/illustration.svg" alt="" class="img">
-			</div>
-			<img src="illustrations/wave.svg" alt="" class="wave">
+			<img src="illustrations/wave.svg" alt="" class="wave-img">
 		</div>
 		<main class="large-internal-container">
-			<nav class="cajaNav">
-				<div class="titNav">
-					<div class="logo">
-						<a href="#home">
-							<img src="illustrations/logo.svg" alt="" class="img-logo">
-						</a>
-					</div>
-					<div class="toggle" onclick="alternate('menu')">
-						<img src="illustrations/toggle-column.svg" alt="" class="img-toggle">
+			<nav class="navbar navbar-expand-lg sticky-top caja-nav">
+				<div class="container-fluid">			
+					<a class="navbar-brand" href="#home">
+						<img src="illustrations/logo.svg" alt="" class="img-logo">
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarToggler">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+							<a class="nav-link active" href="#courses" id="coursesOpt">Cursos</a>
+							</li>
+							<li class="nav-item">
+							<a class="nav-link" href="#instructor" id="instructorOpt">Instructora</a>
+							</li>
+							<li class="nav-item">
+							<a class="nav-link" href="#suscribe" id="suscribeOpt">Suscribirse</a>
+							</li>
+							<li class="nav-item">
+							<a class="nav-link" href="#contact" id="contactOpt">Contacto</a>
+							</li>
+						</ul>
 					</div>
 				</div>
-				<ul class="barNav closed menu-item" id="menu">
-					<li><a href="#courses" id="coursesOpt">Cursos</a></li>
-					<li><a href="#instructor" id="instructorOpt">Instructora</a></li>
-					<li><a href="#suscribe" id="suscribeOpt">Suscribirse</a></li>
-					<li><a href="#contact" id="contactOpt">Contacto</a></li>
-				</ul>
 			</nav>
-			<div class="internal-container" id="courses">
-				<div class="course-container">
-					<div class="course-card">
-						<div class="course-card-internal">
-							<div class="image-card">
-								<img class="card-img-top" src="illustrations/business-person.svg" alt="">
-							</div>
-							<div>
-								<h4 style="color: #FFFFFF;">Finanzas e inversiones</h4>
-							</div>
-							<div>
-								<p>Aprende fundamentos de finanzas y la manera de como atraer inversiones</p>
-							</div>
-						</div>
-					</div>
-					<div class="course-card">
-						<div class="course-card-internal">
-							<div class="image-card">
-								<img class="card-img-top" src="illustrations/ecommerce.svg" alt="">
-							</div>
-							<div>
-								<h4 style="color: #FFFFFF;">E-Commerce</h4>
-							</div>
-							<div>
-								<p>Aprende a usar las mejores herramientas para el comercio electrónico</p>
+			
+			<div class="container-fluid full-page" id="courses" style="overflow: auto;">
+				<div class="container h-100 d-flex align-items-center justify-content-center" id="coursesInternal">
+					<div class="card-group" style="column-gap: 1%;" id="cardGroup">
+						<div class="card" style="background: none; border: 1px solid #004000">
+							<img class="card-img-top" src="illustrations/business-person.svg" alt="">
+							<div class="card-body">
+								<div>
+									<h4 style="color: #FFFFFF;">Finanzas e inversiones</h4>
+								</div>
+								<div>
+									<p>Aprende fundamentos de finanzas y la manera de como atraer inversiones</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="course-card">
-						<div class="course-card-internal">
-							<div class="image-card">
-								<img class="card-img-top" src="illustrations/business-chart-finance.svg" alt="">
-							</div>
-							<div>
-								<h4 style="color: #FFFFFF;">Negocios</h4>
-							</div>
-							<div>
-								<p>Aprende a manejar las herramientas para potenciar tu emprendimiento</p>
+						<div class="card" style="background: none; border: 1px solid #004000">
+							<img class="card-img-top" src="illustrations/ecommerce.svg" alt="">
+							<div class="card-body">
+								<div>
+									<h4 style="color: #FFFFFF;">E-Commerce</h4>
+								</div>
+								<div>
+									<p>Aprende a usar las mejores herramientas para el comercio electrónico</p>
+								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-			<div class="internal-container" id="instructor">
-				<div class="presentation-container">
-					<div>
-						<img src="illustrations/caroline-seda-photo.svg" alt="" class="img img-picture">
-					</div>
-					<div class="text-container">
-						<h1 class="title">CAROLINE SEDA</h1>
-						<h2 class="subtitle" style="color: #000000">Licenciada en Administración y Dirección de Empresas</h2>
-						<div class="presentation-social-media">
-							<img src="illustrations/tiktok-logo.svg" alt="" class="img-logo">
-							<span class="social-media-presentation">@caroline_seda_34</span>
+						<div class="card" style="background: none; border: 1px solid #004000">
+							<img class="card-img-top" src="illustrations/business-chart-finance.svg" alt="">
+							<div class="card-body">
+								<div>
+									<h4 style="color: #FFFFFF;">Negocios</h4>
+								</div>
+								<div>
+									<p>Aprende a manejar las herramientas para potenciar tu emprendimiento</p>
+								</div>
+							</div>
+							</div>
 						</div>
 					</div>
 				</div>
+				
+
 			</div>
-			<div class="internal-container" id="suscribe">
-				<div class="container form-container">
-					<form>
-						<div class="row">
-							<div class="col-sm-6 col-xs-12">
-								<label for="name" class="form-label">Nombre completo:</label>
-								<input type="text" class="form-control form-input" id="name" placeholder="Ej. Juan Pérez" name="name">
+			<div class="container-fluid full-page" id="instructor" style="overflow: hidden;">
+				<div class="container h-100 d-flex align-items-center justify-content-center" id="instructorInternal">
+					<div class="card mb-12" style="border: none; background: none;" id="presentation">
+						<div class="row g-0">
+							<div class="col-md-4">
+								<img src="illustrations/caroline-seda-photo.svg" class="img-fluid rounded-start" alt="">
 							</div>
-							<div class="col-sm-6 col-xs-12">
-								<label for="email" class="form-label">Email:</label>
-								<input type="email" class="form-control form-input" id="email" placeholder="Ej. jperez@dg.com" name="email">
-							</div>
-						</div>
-						<br>
-						<div class="row" >
-							<div class="col-sm-6 col-xs-12">
-								<label for="entrepreneurship" class="form-label">Tipo emprendimiento:</label>
-								<input type="text" class="form-control form-input" id="entrepreneurship" placeholder="Ej. Tecnología" name="entrepreneurship">
-							</div>
-							<div class="col-sm-6 col-xs-12">
-								<label for="phone" class="form-label">Telefono:</label>
-								<div class="row">
-									<div class="col-3">
-										<select class="form-select form-input">
-											<option>+593</option>
-											<option>+507</option>
-										  </select>
-									</div>
-									<div class="col-9">
-										<input type="text" class="form-control form-input" id="phone" name="phone">
+							<div class="col-md-8">
+								<div class="card-body">
+									<h1 class="title">CAROLINE SEDA</h1>
+									<h2 class="subtitle" style="color: #000000">Licenciada en Administración y Dirección de Empresas</h2>
+									<div class="presentation-social-media">
+										<img src="illustrations/tiktok-logo.svg" alt="" class="img-logo">
+										<span class="subtitle social-media-presentation">@caroline_seda_34</span>
 									</div>
 								</div>
 							</div>
 						</div>
-						<br>
-						<button type="submit" class="btn btn-light container-fluid" style="color: #16A085;" data-bs-toggle="tooltip" title="Haz click aquí">Ir</button>
-					</form> 
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid full-page" id="suscribe">
+				<div class="container h-100 d-flex align-items-center justify-content-center"  style="border: none;" id="suscribeInternal">
+					<div class="container" style="border: 1px solid #004000; padding: 3.6% 5.3%;" id="formGroup">
+						<form>
+							<div class="form-group">
+								<div class="row">
+									<div class="col-md-6 col-xs-12">
+										<label for="name" class="form-label">Nombre completo:</label>
+										<input type="text" class="form-control" id="name" placeholder="Ej. Juan Pérez" name="name">
+									</div>
+									<div class="col-md-6 col-xs-12">
+										<label for="email" class="form-label">Email:</label>
+										<input type="email" class="form-control" id="email" placeholder="Ej. jperez@dg.com" name="email">
+									</div>
+								</div>
+								<br>
+								<div class="row" >
+									<div class="col-md-6 col-xs-12">
+										<label for="entrepreneurship" class="form-label">Tipo emprendimiento:</label>
+										<input type="text" class="form-control" id="entrepreneurship" placeholder="Ej. Tecnología" name="entrepreneurship">
+									</div>
+									<div class="col-md-6 col-xs-12">
+										<label for="phone" class="form-label">Telefono:</label>
+										<div class="row">
+											<div class="col-sm-3">
+												<select class="form-select">
+													<option>+593</option>
+													<option>+507</option>
+												</select>
+											</div>
+											<div class="col-sm-9">
+												<input type="text" class="form-control" id="phone" placeholder="Ej. 999999999" name="phone">
+											</div>
+										</div>
+									</div>
+								</div>
+								<br>
+								<button 
+									type="submit" 
+									class="btn btn-light container-fluid" 
+									style="color: #FFFFFF; background: #004000;" 
+									data-bs-toggle="tooltip" 
+									title="Haz click aquí">
+									Ir
+								</button>
+							</div> 
+						</form>
+					</div>
 				</div>				
 			</div>
 			<div class="internal-container" id="contact">
 				<div class="contact-container">
-					<div class="contact-internal-container">
-						<div class="contact-card">
-							<div >
-								<img src="illustrations/logo.svg" alt="" class="contact-logo">
+					<div class="container h-100 d-flex align-items-center justify-content-center">
+						<div class="card-group" style="column-gap: 10%;">
+							<div class="card" style="background: none; border: none;">
+								<img class="card-img-top" src="illustrations/logo.svg" alt="">
+								<div class="card-body">
+									<div>
+										<h2 style="color:#FFFFFF; text-align: center;">Impulsamos tu emprendimiento</h2>
+									</div>
+								</div>
 							</div>
-							<div>
-								<h2 style="color:#FFFFFF; text-align: center;">Impulsamos tu emprendimiento</h2>
-							</div>
-						</div>
-						<div class="contact-card">
-							<div>
-								<h2 style="text-align: center;">Siguenos en nuestras redes</h2>
-							</div>
-							<div class="social-media-container">
-								<img class="social-media-img" src="illustrations/facebook-logo.svg" alt="">
-								<img class="social-media-img" src="illustrations/instagram-logo.svg" alt="">
-								<img class="social-media-img" src="illustrations/tiktok-logo.svg" alt="">
-							</div>
-							<div>
-								<a href="#suscribe" class="cta"><span class="btn-txt">Suscribete</span></a>
+							<div class="card" style="background: none; border: none;">
+								<div class="card-body" style="align-items: center; justify-content: center;">
+									<div>
+										<h2 style="text-align: center;">Siguenos en nuestras redes</h2>
+									</div>
+									<div class="social-media-container">
+										<img class="social-media-img" src="illustrations/facebook-logo.svg" alt="">
+										<img class="social-media-img" src="illustrations/instagram-logo.svg" alt="">
+										<img class="social-media-img" src="illustrations/tiktok-logo.svg" alt="">
+									</div>
+									<div style="align-items: center; justify-content: center;">
+										<div>
+											<a href="#suscribe" class="cta" style="
+											width: 100%;"><span class="btn-txt">Suscribete</span></a>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>

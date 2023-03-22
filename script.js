@@ -33,28 +33,28 @@ function scrollFunction() {
 	const contactOpt = 'contactOpt';
 	const noSelectedColor = '#FFFFFF';
 	const selectedColor = '#004000';
-	if (isInViewport(courses)) {
+	if (this.isInViewport(courses)) {
 		document.getElementById(courseOpt).style.color = selectedColor;
 		document.getElementById(instructorOpt).style.color = noSelectedColor;
 		document.getElementById(suscribeOpt).style.color = noSelectedColor;
 		document.getElementById(contactOpt).style.color = noSelectedColor;
 	}
-	if (isInViewport(instructor)) {
+	if (this.isInViewport(instructor)) {
 		document.getElementById(courseOpt).style.color = noSelectedColor;
 		document.getElementById(instructorOpt).style.color = selectedColor;
 		document.getElementById(suscribeOpt).style.color = noSelectedColor;
 		document.getElementById(contactOpt).style.color = noSelectedColor;
 	}
-	if (isInViewport(suscribe)) {
+	if (this.isInViewport(suscribe)) {
 		document.getElementById(courseOpt).style.color = noSelectedColor;
 		document.getElementById(instructorOpt).style.color = noSelectedColor;
 		document.getElementById(suscribeOpt).style.color = selectedColor;
 		document.getElementById(contactOpt).style.color = noSelectedColor;
 	}
-	if (isInViewport(contact)) {
+	if (this.isInViewport(contact)) {
 		document.getElementById(courseOpt).style.color = noSelectedColor;
 		document.getElementById(instructorOpt).style.color = noSelectedColor;
 		document.getElementById(suscribeOpt).style.color = noSelectedColor;
 		document.getElementById(contactOpt).style.color = selectedColor;
-	}	
+	}
 } 
